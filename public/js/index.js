@@ -20,7 +20,7 @@ weatherForm.addEventListener('submit', (e) => {
     massageFive.textContent = ' '
     massageSix.textContent = ' '
     console.log('Client side js script')
-    fetch('http://localhost:8080/weather?search=' + address + '').then((responce) => {
+    fetch('/weather?search=' + address + '').then((responce) => {
         responce.json().then((data) => {
             if (data.error) {
                 console.log(data.error)

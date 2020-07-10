@@ -7,6 +7,7 @@ const weather = require('./weather-forcost.js')
 
 
 const app = express()
+const port = process.env.PORT || 8080
     // Define paths for Express conif
 const publicDirectory = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templete/views')
@@ -70,6 +71,6 @@ app.get('*', (req, res) => {
         name: 'Tanmay Singewar'
     })
 })
-app.listen(8080, () => {
-    console.log('Server is running ')
+app.listen(port, () => {
+    console.log('Server is running' + port)
 })
