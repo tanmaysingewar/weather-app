@@ -32,7 +32,7 @@ weatherForm.addEventListener('submit', (e) => {
                 massageThree.textContent = 'Current condition is ' + data.data.current.condition.text + '.'
                 massageFour.textContent = 'Humidity in air ' + data.data.current.humidity + '%.'
                 massageFive.textContent = 'Direction of wind ' + data.data.current.wind_dir + '.'
-                massageSix.textContent = 'Spreed of wind ' + data.data.current.wind_kph + ' kph.'
+                massageSix.textContent = 'Speed of wind ' + data.data.current.wind_kph + ' kph.'
             }
 
 
